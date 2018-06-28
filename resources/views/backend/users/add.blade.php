@@ -33,6 +33,10 @@
                                 <input class="form-control" name="full_name" placeholder="Nhập tên người dùng" />
                             </div>
                             <div class="form-group">
+                                <label>UserName</label>
+                                <input class="form-control" name="user_name" placeholder="Nhập tên đăng nhập" />
+                            </div>
+                            <div class="form-group">
                                 <label>Email</label>
                                 <input type="email" class="form-control" name="email" placeholder="Nhập email người dùng" />
                             </div>

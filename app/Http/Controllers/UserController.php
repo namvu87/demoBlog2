@@ -45,6 +45,7 @@ class UserController extends Controller
             ]);
 
         $user = New User;
+        $user->username = $request->user_name;
         $user->full_name = $request->full_name;
         $user->email = $request->email;
         $user->password = bcrypt($request->password);
@@ -52,7 +53,7 @@ class UserController extends Controller
         $user->phone = $request->phone;
         $user->address = $request->address;
         $user->save();
-        return redirect("admin/users/add")->with('thongbao','Bạn đã tạo tài khoản mới thành công');
+        return redirect("admin/users/list")->with('thongbao','Bạn đã tạo tài khoản mới thành công');
     }
 
     public function getEdit($id)
